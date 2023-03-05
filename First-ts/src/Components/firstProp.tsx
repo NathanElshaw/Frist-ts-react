@@ -4,12 +4,14 @@ interface props {
   secondInput: string;
 }
 
-const FirstProp: FC<props> = (prop): JSX.Element => {
+const FirstProp: FC<props> = (prop) => {
   return (
     <>
-      {prop.input}
-      <br />
-      {prop.secondInput}
+      <div>
+        {prop.input}
+        <br />
+        {prop.secondInput}
+      </div>
     </>
   );
 };
